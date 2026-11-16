@@ -43,7 +43,7 @@ The PostgreSQL schema covers assembly processes, vehicle models, tools and tool 
 
 Assembly processes are classified into **14 predefined vehicle zones**: engine bay, windshield & wipers, four doors, dashboard, roof, interior pillars, seats & seat belts, trunk, chassis & underbody, front fascia, and wheels & tires.
 
-**Classification and expert validation.** A large language model (Google Gemini) evaluates each process against the 14 controlled zones using structured process context and returns a zone, a vehicle side, a sub-zone and a **confidence score**. Predictions with at least 70 % confidence are marked as high confidence; all others enter a review queue. A dedicated mapping console lets experts classify processes in batch, filter them by status (high confidence, needs review, failed, manual, pending), and confirm or override any prediction. Manual decisions are stored with full confidence and tracked separately from AI predictions.
+**Classification and expert validation.** A large language model evaluates each process against the 14 controlled zones using structured process context and returns a zone, a vehicle side, a sub-zone and a **confidence score**. Predictions with at least 70 % confidence are marked as high confidence; all others enter a review queue. A dedicated mapping console lets experts classify processes in batch, filter them by status (high confidence, needs review, failed, manual, pending), and confirm or override any prediction. Manual decisions are stored with full confidence and tracked separately from AI predictions.
 
 **Interactive exploration.** Engineers can:
 - hover and click zones directly on the 3D model, with live outline highlighting
