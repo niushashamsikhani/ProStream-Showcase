@@ -52,3 +52,12 @@ Assembly processes are classified into **14 predefined vehicle zones**: engine b
 - review the processes of a zone in a side panel, edit a process, or export it as a document
 
 The viewer is model-agnostic: each vehicle has its own configuration (glTF asset, mesh-to-zone dictionary, camera and transform), and unknown models fall back to a default configuration. Models are streamed as Meshopt-compressed glTF, and loading failures degrade gracefully.
+
+
+## Validation
+
+ProStream's estimates were compared with stopwatch measurements across the evaluated processes and showed a deviation of **4–10 %**. Calibration of the timing parameters is iterative: deviations are analysed per process, and the parameters of the timing model are adjusted accordingly.
+
+## Ongoing research
+
+My dissertation investigates **machine-learning-based assembly-line balancing**: using process times, precedence relations and production-hall constraints to build an optimization model for task allocation, workstation workload distribution and operator requirements. Model evaluation is still pending.
