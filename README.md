@@ -1,6 +1,24 @@
 <h1 align="center">ProStream</h1>
 <p align="center"><b>Intelligent Automotive Assembly Process and Time-Estimation Platform</b></p>
-<p align="center">OCR · NLP · Heuristic modelling · AI-assisted 3D explorer · Dynamic reporting</p>
+<p align="center"><i>Estimate standard assembly times directly from process sheets, without a stopwatch on the line.</i></p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB" alt="React">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Three.js-000000?style=flat&logo=threedotjs&logoColor=white" alt="Three.js">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white" alt="Flask">
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white" alt="PostgreSQL">
+</p>
+
+<table align="center">
+  <tr>
+    <td align="center"><b>4–10 %</b><br>deviation from<br>stopwatch measurements</td>
+    <td align="center"><b>14</b><br>vehicle zones<br>classified by AI</td>
+    <td align="center"><b>~35</b><br>REST API<br>endpoints</td>
+    <td align="center"><b>MTM + BasicMOST</b><br>work-measurement<br>methods integrated</td>
+  </tr>
+</table>
 
 > **Note:** This repository is a project showcase. The source code and production data belong to an industrial collaboration and are kept private for confidentiality. A live demo can be provided on request.
 
