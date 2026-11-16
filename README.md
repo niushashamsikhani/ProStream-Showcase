@@ -37,3 +37,18 @@ ProStream is a full-stack system that I designed and built end to end: data extr
 ## Data model and API
 
 The PostgreSQL schema covers assembly processes, vehicle models, tools and tool stations, calibrated parameter tables (tool-type, manual-task, shipping and unpacking parameters) and stored calculation results. A REST API with about 35 endpoints exposes these resources and computes **Design Standard Time**. Schema changes are managed with versioned migrations.
+
+
+## AI-assisted 3D vehicle explorer
+
+Assembly processes are classified into **14 predefined vehicle zones**: engine bay, windshield & wipers, four doors, dashboard, roof, interior pillars, seats & seat belts, trunk, chassis & underbody, front fascia, and wheels & tires.
+
+**Classification and expert validation.** A large language model (Google Gemini) evaluates each process against the 14 controlled zones using structured process context and returns a zone, a vehicle side, a sub-zone and a **confidence score**. Predictions with at least 70 % confidence are marked as high confidence; all others enter a review queue. A dedicated mapping console lets experts classify processes in batch, filter them by status (high confidence, needs review, failed, manual, pending), and confirm or override any prediction. Manual decisions are stored with full confidence and tracked separately from AI predictions.
+
+**Interactive exploration.** Engineers can:
+- hover and click zones directly on the 3D model, with live outline highlighting
+- fly the camera to a zone-specific viewpoint, with orbit, tilt and zoom controls and an interior view
+- search processes by code, operation name, model, part name or part number, and focus the matching zone
+- review the processes of a zone in a side panel, edit a process, or export it as a document
+
+The viewer is model-agnostic: each vehicle has its own configuration (glTF asset, mesh-to-zone dictionary, camera and transform), and unknown models fall back to a default configuration. Models are streamed as Meshopt-compressed glTF, and loading failures degrade gracefully.
