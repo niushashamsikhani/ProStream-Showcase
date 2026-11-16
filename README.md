@@ -58,6 +58,27 @@ The viewer is model-agnostic: each vehicle has its own configuration (glTF asset
 
 ProStream's estimates were compared with stopwatch measurements across the evaluated processes and showed a deviation of **4–10 %**. Calibration of the timing parameters is iterative: deviations are analysed per process, and the parameters of the timing model are adjusted accordingly.
 
+
 ## Ongoing research
 
 My dissertation investigates **machine-learning-based assembly-line balancing**: using process times, precedence relations and production-hall constraints to build an optimization model for task allocation, workstation workload distribution and operator requirements. Model evaluation is still pending.
+
+
+## Technology
+
+- **Frontend:** React · TypeScript · Three.js · React Three Fiber · drei · glTF (Meshopt)
+- **Backend:** Python · Flask · SQLAlchemy · Alembic migrations · REST API
+- **Database:** PostgreSQL
+- **AI:** OCR/NLP document extraction · LLM-based zone classification (Google Gemini) · heuristic estimation models
+
+## My role
+
+Technical Lead. I conceived the project and independently developed the end-to-end platform, from problem formulation and the estimation model to the data pipeline, the API and the web application.
+
+## Status
+
+In development since August 2024 in collaboration with an automotive manufacturer.
+
+## Contact
+
+Niusha Shamsikhani · niusha.s2015@gmail.com
