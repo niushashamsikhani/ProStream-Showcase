@@ -81,10 +81,13 @@ ProStream's estimates were compared with stopwatch measurements across the evalu
 
 Extracting process data and searching for it with AI takes a fraction of the time needed manually.
 
-<p align="center">
-  <img src="docs/images/extraction-time.png" alt="Extraction time: AI-powered versus manual" height="260">
-  <img src="docs/images/search-time.png" alt="Search time: AI-powered versus manual" height="260">
-</p>
+<table align="center">
+  <tr>
+    <td width="50%"><img src="docs/images/extraction-time.png" alt="Extraction time: AI-powered versus manual" width="100%"></td>
+    <td width="50%"><img src="docs/images/search-time.png" alt="Search time: AI-powered versus manual" width="100%"></td>
+  </tr>
+</table>
+
 <p align="center"><sub>Processing time, AI-powered versus manual: data extraction (left) and search (right).</sub></p>
 
 ## Ongoing research
