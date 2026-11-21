@@ -70,7 +70,6 @@ Assembly processes are classified into **14 predefined vehicle zones**: engine b
 
 The viewer is model-agnostic: each vehicle has its own configuration (glTF asset, mesh-to-zone dictionary, camera and transform), and unknown models fall back to a default configuration. Models are streamed as Meshopt-compressed glTF, and loading failures degrade gracefully.
 
-
 ## Validation
 
 ProStream's estimates were compared with stopwatch measurements across the evaluated processes and showed a deviation of **4–10 %**. In the sample below, ProStream's estimates are consistently slightly lower than the stopwatch values. Calibration of the timing parameters is iterative: deviations are analysed per process, and the parameters of the timing model are adjusted accordingly.
